@@ -21,6 +21,8 @@ const askSaveEmailInteractive = (email) => pipe(
     map(handleException(equals('yes'), email, 'Has decided not to save email!'))
 )()
 
+// ## Program ##
+
 // saveEmailInteractive :: () -> Async Message Email
 const saveEmailInteractive = pipeK(
     pipe(getUserEmailInteractive, flattenEither),
