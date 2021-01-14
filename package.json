@@ -12,6 +12,8 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "crocks": "^0.12.4",
+    "folktale": "^2.3.2",
+    "monet": "^0.9.1",
     "node-fetch": "^2.6.1",
     "ramda": "^0.27.1"
   }

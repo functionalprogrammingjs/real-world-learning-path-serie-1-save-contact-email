@@ -21,6 +21,8 @@ const askSaveEmailInteractive = (email) => pipe(
     andThen(ifElse((equals('yes')), always(email), notifyException('Has decided not to save email!')))
 )()
 
+// ## Program ##
+
 // saveEmailInteractive :: () -> Promise Message Email
 const saveEmailInteractive = pipe(
     getUserEmailInteractive,
